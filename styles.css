@@ -20,6 +20,7 @@
     width: var(--menu-bar-width);
     height: var(--menu-bar-height);
     position: absolute;
+    transition: all 250ms linear 0s;
 }
 
 #menu::before {
@@ -34,25 +35,27 @@
 
 
 .hamburger-container {
-    border: 2px solid green;
+    border: 2px solid red;
     width: 40px;
     height: 30px;
     padding: 20px;
 }
 
+.hamburger-container:hover {
+    border: 2px dotted forestgreen;
+}
+
 .hamburger-container:hover #menu {
     background-color: transparent;
-    transition: all 1s ease 0s;
 }
 
 .hamburger-container:hover #menu::before {
     margin-top: 20px;
     transform: rotate(45deg);
-    transition: all 1s ease 0s;
 }
 
 .hamburger-container:hover #menu::after {
     margin-top: -20px;
     transform: rotate(-45deg);
-    transition: all 1s ease 0s;
+    animation-duration: 0.1s;
 }
