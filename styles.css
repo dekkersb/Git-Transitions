@@ -57,5 +57,4 @@
 .hamburger-container:hover #menu::after {
     margin-top: -20px;
     transform: rotate(-45deg);
-    animation-duration: 0.1s;
 }
